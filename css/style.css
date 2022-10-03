@@ -2,174 +2,136 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:Arial, Helvetica, sans-serif
 }
 
+
+/*GLOBAL*/
 #header {
-   background-color: #8BB4B7;
    display: flex;
-   padding: 5px;
-   height: 100px;
-   justify-content: space-between;
-   position: sticky;
-   top: 0%;
-   z-index: 999;
-   align-items: center;
-
+   background-color: #616564;
+   padding: 2px;
+   align-items: flex-start;
 }
 
-.header__menu ul li {
-    list-style: none;
-    display: inline;
-    justify-content: flex-start;
-    padding: 10px;
+#header p {
+    color: #1dfdd7;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 0px 0px;
+    margin: 0px 0px 5px 0px;
 }
 
-.header__menu ul li a {
-    text-decoration: none;
-    background-color: #8BB4B7;
-    color: black;
-    padding: 5px;
-    border-radius: 10px;
+#header img {
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    margin: 0;
 }
 
-.header__menu ul li a:hover {
-    background-color: #BDD6D9;
-}
-
-.header__logo img {
-    padding: 5px;
-    margin: 0px 200px 0px 0px;
+.imagen__main {
+    height: auto;
     width: 100px;
+    margin-left: 0px;
+    margin-right: 20px;
+    padding: 0;
+
 }
 
-.header__iconos {
-    display: inline;
-    text-decoration: none;
-    padding: 10px;
-    margin: 10px;
-}
-
-#footer {
-    background-color:#8BB4B7;
+.main__contacto {
     display: flex;
-    padding: 20px;
+    color: #616564;
+    margin-right:10px;
+    margin-left: 0;
+    padding: 0%;
+}
+
+.main__info{
+    display: flex;
+    color: #616564;
+    margin-right: 100px;
+    padding: 0%;
+}
+
+.main__icono {
+    display: flex;
+    margin-top: 0%;
+    
+}
+
+.main__boton{
+    display: flex;
+    margin-right: 40px;
+    padding: 10px;
+}
+
+@media (max-width: 800px) {
+    .imagenmanos img {
+        height: auto;
+        width: 400px;
+        text-align: center;
+    }
+}
+
+
+.footer {
+    display: flex;
+    background-color:#616564;
+    padding: 70px;
     justify-content: space-between;
     align-items: center;
     height: 100px;
 }
 
+.footer h5 {
+    color:#1dfdd7
+}
+.footer p {
+  color: #1dfdd7;
+  margin-right: 160px;
+  margin-left: 0%;
+}
+
 .footer__iconos {
     list-style: none;
-    display: inline;
     justify-content: flex-start;
     padding: 10px;
 }
+.footer__logo img{
+   height: auto;
+    width: 100px;
+    margin-left: 70px;
+    padding: 0;
+}  
 
-/*HOME*/
+.footer__imagen img{
+    height: auto;
+    width: 100px;
+} 
 
-#main {
-    background-color: #8BB4B7;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 1200px;
-    background-image: url("../imagenes/mainHome.jpeg");
-    background-repeat: none;
-    background-position: center center;
-    background-size: cover;
+
+@media (max-width: 814px) {
+    .footer__imagen img {
+        display: none;
+    }
+    .footer__logo {
+       display: none;
+    }
+    .footer p {
+        margin-right: 0;
+        margin-left: px;
+    }
+    .footer h5{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .footer {
+        justify-content: space-around;
+    }
 }
 
-#section__primero {
-    display: flex;
-    flex-direction: column;
-    height: 500px;
+/*SERVICIOS*/ 
 
-}
-
-.section__primerh {
-    background-color: #BDD6D9;
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    padding: 65px;
-    border: 5px double #8BB4B7;
-    overflow: auto;
-
-}
-.section__primerop {
-    background-color: white;
-    height: 500px;
-    justify-content: left;
-}
-
-#section__segundo {
-    display: flex;
-    flex-direction: column;
-    height: 500px;
-}
-
-.section__segundoh {
-    background-color: #BDD6D9;
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    padding: 65px;
-    border: 5px double #8BB4B7;
-
-}
-
-.section__segundop {
-    background-color: white;
-    height: 500px;
-    justify-content: left;
-    
-}
-
-/*SERVICIOS*/
-#main__servicios {
-    display: flex;
-    flex-direction: column;
-    height: 700px;
-}
-
-.main__serviciosm {
-    background-color: #BDD6D9;
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    padding: 65px;
-    border: 5px double #8BB4B7;
-    overflow: auto;
-}
- /*TRABAJO*/
-
- #main__trabajo {
-    display: flex;
-    flex-direction: column;
-    height: 700px;
-}
-
-.main__trabajom {
-    background-color: #BDD6D9;
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    padding: 65px;
-    border: 5px double #8BB4B7;
-    overflow: auto;
-}
-
-/*CONTACTO*/
-
-#main__contacto {
-    display: flex;
-    flex-direction: column;
-    height: 200px;
-}
-
-.main__contactom {
-    background-color: #BDD6D9;
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    padding: 65px;
-    border: 5px double #8BB4B7;
-    overflow: auto;
+.trabajos__p {
+   color:rgb(98, 100, 102);
 }
