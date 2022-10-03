@@ -61,8 +61,31 @@
 
 .main__boton{
     display: flex;
-    margin-right: 40px;
+    margin-right: 20px;
     padding: 10px;
+}
+
+@media (max-width: 1120px) and (min-width: 980){ 
+    .main__boton {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .main__icono {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .main__contacto{
+        margin-left: 10px;
+    }
+    .main__info{
+        margin-left: 0px;
+
+    }
+    .imagen__main{
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0;
+    }
 }
 
 @media (max-width: 800px) {
