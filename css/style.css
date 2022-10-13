@@ -29,6 +29,8 @@
     margin: 0;
 }
 
+/*HOME*/
+
 .imagen__main {
     height: auto;
     width: 100px;
@@ -38,12 +40,54 @@
 
 }
 
+.main__h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 150px;
+    color:#1dfdd7
+}
+
+.main__p {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    color:#1dfdd7
+}
+
 .main__contacto {
     display: flex;
     color: #616564;
     margin-right:10px;
     margin-left: 0;
     padding: 0%;
+}
+
+
+.grid-area {
+    display: grid;
+    padding: 5px;
+    margin: 10px;
+    grid-template-areas: 
+    "uno cuatro"
+    "dos cuatro"
+    "tres tres";
+}
+
+.grid-uno {
+    grid-area: uno;
+}
+
+.grid-dos {
+    grid-area: dos;
+}
+
+.grid-tres {
+   grid-area: tres;
+}
+
+.grid-cuatro {
+    grid-area: cuatro;
+
 }
 
 .main__info{
@@ -60,10 +104,13 @@
 }
 
 .main__boton{
-    display: flex;
+    display: grid;
+    grid-row-gap:5px;
     margin-right: 20px;
-    padding: 10px;
+
 }
+
+
 
 @media (max-width: 1120px) and (min-width: 980){ 
     .main__boton {
@@ -157,4 +204,17 @@
 
 .trabajos__p {
    color:rgb(98, 100, 102);
+}
+
+/*CONTACTO*/
+.contacto-titulo {
+   display: grid;
+   justify-content: center;
+
+}
+
+#grid-box {
+    display: grid;
+    grid-template-columns: 800px;
+    justify-content: center;
 }
